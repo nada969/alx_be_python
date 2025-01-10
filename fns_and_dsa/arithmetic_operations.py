@@ -11,6 +11,6 @@ def perform_operation(num1,num2,operation):
             if num2 == 0:
                 massage:str = 'error'
                 return massage
-            else:
+            elif num2 != 0:
                 return num1 / num2
 
