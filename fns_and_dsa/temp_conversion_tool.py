@@ -10,6 +10,7 @@ def convert_to_fahrenheit(celsius):
 
 
 
+
 temp = float(input('Enter the temperature to convert: '))
 type_temp =str(input('Is this temperature in Celsius or Fahrenheit? (C/F): '))
 
