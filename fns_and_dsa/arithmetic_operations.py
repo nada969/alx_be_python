@@ -1,5 +1,5 @@
-
-def perform_operation(num1:float,num2:float,operation:str):
+# ["num1, num2, operation"] 
+def perform_operation(num1,num2,operation):
     match operation:
         case '+' | 'add':
            return num1 + num2
@@ -11,6 +11,6 @@ def perform_operation(num1:float,num2:float,operation:str):
             if num2 == 0:
                 massage:str = 'error'
                 return massage
-            else:
+            elif num2 != 0:
                 return num1 / num2
 
