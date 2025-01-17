@@ -1,7 +1,10 @@
 
+from tkinter import dnd
+
+
 class BankAccount:
-    def __init__(self,account_balance=0):
-        self.account_balance = account_balance 
+    def __init__(self,account_balance=0.00):
+        self.account_balance = account_balance
 
     def deposit(self,amount):
         self.account_balance += amount
@@ -14,5 +17,9 @@ class BankAccount:
             return False
         
     def display_balance(self):
-        print(f'the Balance is: {self.account_balance}')
+        print(f'the Balance is: {float(self.account_balance)}')
         return 0
+
+b = BankAccount(100)
+b.withdraw(10)
+b.display_balance()
