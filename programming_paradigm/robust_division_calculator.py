@@ -1,7 +1,7 @@
 def safe_divide(numerator, denominator):
     try:
         result = float(numerator)/float(denominator)
-        return "The result of the division is {result}"
+        return (f"The result of the division is {result}")
 
     except ValueError as e:
         return ("Error: Please enter numeric values only.")
