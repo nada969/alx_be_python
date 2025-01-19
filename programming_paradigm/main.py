@@ -1,5 +1,6 @@
 import sys
 from robust_division_calculator import safe_divide
+import unittest
 
 def main():
     # if len(sys.argv) != 3:
@@ -13,4 +14,4 @@ def main():
     print(result)
 
 if __name__ == "__main__":
-    main()
+    unittest.main()
