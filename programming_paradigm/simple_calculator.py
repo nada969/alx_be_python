@@ -17,10 +17,11 @@ class SimpleCalculator:
 
     def divide(self, a, b):
         """Return the division of a by b. Returns None if b is zero."""
-        if b == 0:
-            return None
+        # if b == 0:
+        #     return ZeroDivisionError('cant divide by 0')
         return a / b
     
+
 
 
 

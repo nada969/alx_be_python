@@ -1,16 +1,17 @@
-def safe_divide(numerator, denominator):
-    try:
-<<<<<<< HEAD
-        result = numerator / denominator
-=======
-        result = float(numerator)/float(denominator)
->>>>>>> 9081896e4398d900f0235364ef3a0243f6af9296
-        return (f"The result of the division is {result}")
 
-    except ValueError as e:
-        return ("Error: Please enter numeric values only.")
+def safe_divide(numerator:float, denominator:float):
+    try:   # first excute this
+        result = numerator / denominator
+   
+    except ValueError :
+        return f'Error: Please enter numeric values only.'
     
-    except ZeroDivisionError as e:
-        return ("Error: Cannot divide by zero.")
+    except ZeroDivisionError :
+        return f'Error: Cannot divide by zero.'
     
-print(safe_divide(1,2))
+    else:   # excute this after try(if there is no excetion)
+        return f'The result of the division is {result}'
+
+# first =float(input('enter f='))
+# sec= float(input('enter s='))
+# print(safe_divide(first,sec))
